@@ -1,0 +1,306 @@
+
+$color_1: white;
+$color_2: black;
+$color_3: rgb(45, 45, 45);
+$font-family_1: "Zain", sans-serif;
+$font-family_2: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+$font-family_3: Calibri, "Trebuchet MS", sans-serif;
+$background-color_1: rgba(0, 0, 0, 0.6);
+$background-color_2: rgb(242, 242, 242);
+$background-color_3: #dad8d8;
+$background-color_4: rgb(0, 115, 255);
+$background-color_5: rgb(1, 83, 184);
+$background-color_6: rgb(216, 216, 216);
+$background-color_7: #939292;
+$pagelayout-width: 80%;
+
+/*# sourceMappingURL=home.css.map */
+
+body{
+	margin-top: 0;
+}
+
+.first-content {
+	background-image: url(../img/transport-in-vietnam.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: -moz-max-content;
+	height: max-content;
+	font-family: $font-family_1;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.inner-first-content {
+	background-color: $background-color_1;
+	padding: 100px 0;
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	color: $color_1;
+	font-family: $font-family_2;
+
+	.form {
+		font-family: $font-family_3;
+		background-color: $background-color_2;
+		opacity: 0.9;
+		color: $color_2;
+		padding: 10px 20px;
+		width: 400px;
+		border-radius: 12px;
+		box-shadow: 0 7px 7px 3px rgba(0, 0, 0, 0.9);
+
+		h1 {
+			text-align: center;
+			padding: 10px 0 30px;
+			font-size: 40px;
+		}
+
+		h2 {
+			padding: 10px 0 5px;
+			margin-top: 10px;
+		}
+
+		.text-box {
+			width: 100%;
+			display: flex;
+			gap: 15px;
+			background-color: $background-color_3;
+			padding: 5px 10px;
+			font-size: 20px;
+			opacity: 0.7;
+		}
+
+		.lower-border {
+			border-bottom: solid 1px grey;
+		}
+
+		form {
+			label {
+				display: inline;
+				font-weight: lighter;
+				width: 30%;
+				text-align: left;
+				align-self: center;
+				opacity: 1;
+			}
+
+			input {
+				background-color: $background-color_3;
+				padding: 10px 5px;
+				width: 70%;
+				border: none;
+				border-radius: 5px;
+				font-size: 18px;
+				opacity: 1;
+
+				&:focus {
+					border: none;
+					outline: 0;
+
+					+ {
+						.text-box {
+							border: green 1px solid;
+						}
+
+						.list {
+							display: block;
+						}
+					}
+				}
+			}
+
+			.list {
+				display: none;
+			}
+
+			button {
+				border: none;
+				width: 100%;
+				padding: 10px 0;
+				margin-top: 15px;
+				font-size: 17px;
+				font-weight: bold;
+				background-color: $background-color_4;
+				color: $color_1;
+				border-radius: 7px;
+
+				&:hover {
+					background-color: $background-color_5;
+				}
+			}
+		}
+	}
+
+	.text {
+		width: 55%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	h1 {
+		font-size: 80px;
+	}
+
+	p {
+		font-size: 20px;
+		padding: 10px;
+	}
+}
+
+::-moz-placeholder {
+	color: $color_3;
+}
+
+::placeholder {
+	color: $color_3;
+}
+
+.second-content {
+	width: $pagelayout-width;
+	height: -moz-max-content;
+	height: max-content;
+	margin: auto;
+	padding: 100px 0;
+	display: flex;
+	justify-content: space-between;
+	font-family: $font-family_3;
+
+	.advantage {
+		width: 50%;
+		padding: 0;
+
+		h1 {
+			font-size: 50px;
+		}
+
+		ul {
+			list-style: none;
+			padding: 30px 0px 30px 30px;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+
+		li {
+			font-size: 25px;
+
+			i {
+				margin-right: 5px;
+			}
+		}
+	}
+
+	.brief-intro {
+		width: 80%;
+		padding: 20px 50px 0;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		gap: 10px;
+
+		#collapsible {
+			width: 80%;
+			border: none;
+			border-bottom: solid 1px black;
+			background-color: white;
+			padding: 15px;
+			font-size: 20px;
+			text-align: left;
+			transition: all 0.3s;
+
+			&:hover {
+				padding-left: 30px;
+			}
+
+			&:active,
+			&:focus {
+				padding-left: 30px;
+
+				+ {
+					article {
+						display: block;
+					}
+				}
+			}
+		}
+
+		article {
+			width: 80%;
+			transition: all 0.3s;
+			display: none;
+			background-color: $background-color_3;
+			padding: 20px;
+		}
+	}
+}
+
+.active {
+	background-color: $background-color_6;
+	padding-left: 30px;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.third-content {
+	width: $pagelayout-width;
+	margin: auto;
+	padding: 50px 0;
+	font-family: $font-family_3;
+	h1 {
+		font-size: 50px;
+		text-align: center;
+		margin-bottom: 30px;
+		border-bottom: solid 1px black;
+	}
+
+	p {
+		display: block;
+	}
+
+	article {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+
+		.review-content {
+			padding: 10px;
+			box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
+		}
+	}
+}
+
+@media only screen and (width < 900px) {
+	body {
+		width: 100%;
+	}
+
+	.inner-first-content {
+		flex-direction: column-reverse;
+		padding: 100px 0;
+		gap: 50px;
+
+		.form {
+			width: 100%;
+			border-radius: 0;
+		}
+
+		.text {
+			display: none;
+
+			p {
+				font-size: 30px;
+			}
+		}
+	}
+
+	.first-content {
+		background-position: 50%;
+	}
+
+	.second-content {
+		flex-direction: column;
+		justify-content: center;
+	}
+}

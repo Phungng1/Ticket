@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+    <nav id="nav"></nav>
+    <section class="first-content">
+        <div class="inner-first-content">
+            <div class="form">
+                <form action="">
+                    <h2>Location</h2>
+                    <div class="text-box lower-border">
+                        <label for="start">Start</label>
+                        <input type="text" id="start" placeholder="City or station" onfocus="reveal()">
+                    </div>
+                    <div class="text-box">
+                        <label for="destination">Destination</label>
+                        <input type="text" id="destination" placeholder="City or station" onclick="reveal()">
+
+                    </div>
+                    <h2>Time</h2>
+                    <div class="text-box lower-border">
+                        <label for="form">Out</label>
+                        <input type="text" id="from" placeholder="Select time">
+
+                    </div>
+                    <div class="text-box">
+                        <label for="to">Return</label>
+                        <input type="text" id="to" placeholder="Select time">
+
+                    </div>
+                    <button id="find-train">Find train</button>
+                </form>
+            </div>
+            <div class="text">
+                <h1>Best train ticket platform</h1>
+                <p>Discover Vietnam with us</p>
+            </div>
+        </div>
+    </section>
+    <section class="second-content">
+        <div class="advantage">
+            <h1>Easy and convenient</h1>
+            <h1 style="color: rgb(50, 120, 206);">Totally free</h1>
+            <ul>
+                <li><i class="fa-solid fa-coins" style="color: rgb(250, 214, 11);"></i> Up-to-date price</li>
+                <li><i class="fa-solid fa-tags" style="color: hsl(123, 35%, 47%)  ;"></i> Seasonal sales and discounts
+                </li>
+                <li><i class="fa-solid fa-circle-xmark" style="color: red;"></i> No extra fee</li>
+            </ul>
+        </div>
+        <div class="brief-intro">
+            <button type="button" id="collapsible">Who are we?</button>
+            <article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </article>
+            <button type="button" id="collapsible">How to get train ticket</button>
+            <article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </article>
+            <button type="button" id="collapsible">When is there a discount</button>
+            <article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </article>
+        </div>
+    </section>
+    <section class="third-content">
+        <h1>Reviews</h1>
+        <article class="review" id="review">
+            <div class="review-content">
+                <h3>Name</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, consectetur? Temporibus
+                    perferendis repellat numquam pariatur! Recusandae ipsa aperiam exercitationem quia delectus
+                </p>
+            </div>
+        </article>
+    </section>
+
+
+    <footer id="footer"></footer>
+
+
+
+
+
+
+
+    <!-- Link JS -->
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/home.js"></script>
+    <script type="module" src="../js/firebase.js"></script>
+    <script type="module" src="../js/data.js"></script>
+</body>
+
+</html>

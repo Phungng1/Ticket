@@ -1,0 +1,246 @@
+
+body {
+  margin-top: 0;
+}
+
+.first-content {
+  background-image: url(../img/transport-in-vietnam.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inner-first-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 100px 0;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.inner-first-content .form {
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(242, 242, 242);
+  opacity: 0.9;
+  color: black;
+  padding: 10px 20px;
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 7px 7px 3px rgba(0, 0, 0, 0.9);
+}
+.inner-first-content .form h1 {
+  text-align: center;
+  padding: 10px 0 30px;
+  font-size: 40px;
+}
+.inner-first-content .form h2 {
+  padding: 10px 0 5px;
+  margin-top: 10px;
+}
+.inner-first-content .form .text-box {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  background-color: #dad8d8;
+  padding: 5px 10px;
+  font-size: 20px;
+  opacity: 0.7;
+}
+.inner-first-content .form .lower-border {
+  border-bottom: solid 1px grey;
+}
+.inner-first-content .form form label {
+  display: inline;
+  font-weight: lighter;
+  width: 30%;
+  text-align: left;
+  align-self: center;
+  opacity: 1;
+}
+.inner-first-content .form form input {
+  background-color: #dad8d8;
+  padding: 10px 5px;
+  width: 70%;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  opacity: 1;
+}
+.inner-first-content .form form input:focus {
+  border: none;
+  outline: 0;
+}
+.inner-first-content .form form input:focus + .text-box {
+  border: green 1px solid;
+}
+.inner-first-content .form form input:focus + .list {
+  display: block;
+}
+.inner-first-content .form form .list {
+  display: none;
+}
+.inner-first-content .form form button {
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 15px;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: rgb(0, 115, 255);
+  color: white;
+  border-radius: 7px;
+}
+.inner-first-content .form form button:hover {
+  background-color: rgb(1, 83, 184);
+}
+.inner-first-content .text {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+}
+.inner-first-content h1 {
+  font-size: 80px;
+}
+.inner-first-content p {
+  font-size: 20px;
+  padding: 10px;
+}
+
+::-moz-placeholder {
+  color: rgb(45, 45, 45);
+}
+
+::placeholder {
+  color: rgb(45, 45, 45);
+}
+
+.second-content {
+  width: 80%;
+  height: -moz-max-content;
+  height: max-content;
+  margin: auto;
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+}
+.second-content .advantage {
+  width: 50%;
+  padding: 0;
+}
+.second-content .advantage h1 {
+  font-size: 50px;
+}
+.second-content .advantage ul {
+  list-style: none;
+  padding: 30px 0px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.second-content .advantage li {
+  font-size: 25px;
+}
+.second-content .advantage li i {
+  margin-right: 5px;
+}
+.second-content .brief-intro {
+  width: 80%;
+  padding: 20px 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.second-content .brief-intro #collapsible {
+  width: 80%;
+  border: none;
+  border-bottom: solid 1px black;
+  background-color: white;
+  padding: 15px;
+  font-size: 20px;
+  text-align: left;
+  transition: all 0.3s;
+}
+.second-content .brief-intro #collapsible:hover {
+  padding-left: 30px;
+}
+.second-content .brief-intro #collapsible:active, .second-content .brief-intro #collapsible:focus {
+  padding-left: 30px;
+}
+.second-content .brief-intro #collapsible:active + article, .second-content .brief-intro #collapsible:focus + article {
+  display: block;
+}
+.second-content .brief-intro article {
+  width: 80%;
+  transition: all 0.3s;
+  display: none;
+  background-color: #dad8d8;
+  padding: 20px;
+}
+
+.active {
+  background-color: rgb(216, 216, 216);
+  padding-left: 30px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.third-content {
+  width: 80%;
+  margin: auto;
+  padding: 50px 0;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+}
+.third-content h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: solid 1px black;
+}
+.third-content p {
+  display: block;
+}
+.third-content article {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.third-content article .review-content {
+  padding: 10px;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (width < 900px) {
+  body {
+    width: 100%;
+  }
+  .inner-first-content {
+    flex-direction: column-reverse;
+    padding: 100px 0;
+    gap: 50px;
+  }
+  .inner-first-content .form {
+    width: 100%;
+    border-radius: 0;
+  }
+  .inner-first-content .text {
+    display: none;
+  }
+  .inner-first-content .text p {
+    font-size: 30px;
+  }
+  .first-content {
+    background-position: 50%;
+  }
+  .second-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=home.css.map */

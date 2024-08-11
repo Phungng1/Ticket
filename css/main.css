@@ -1,0 +1,183 @@
+/* body::-webkit-scrollbar {
+    width: auto;
+
+}
+
+body::-webkit-scrollbar-track {
+    background-color: white;
+
+}
+
+body::-webkit-scrollbar-track-piece{
+    width: 30%;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 12px;
+    font-size: 10px;
+    size: 10px;
+} */
+/* Navbar */
+:root {
+  font-size: 16px;
+  --nav-padding: 10px 15px 5px;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  margin-top: 53px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px 1%;
+  background-color: transparent;
+  color: #fbeeda;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 53px;
+  z-index: 1;
+  transition: 0.2s;
+}
+nav .logo {
+  font-size: 1.3rem;
+  font-family: "Kanit", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 30%;
+  padding: var(--nav-padding);
+}
+nav .logo a {
+  cursor: pointer;
+  color: #D6BD98;
+}
+nav .tabs {
+  font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+  width: 60%;
+  gap: 20px;
+}
+nav .tabs > div {
+  padding: var(--nav-padding);
+}
+nav .tabs > div:hover {
+  background-color: #5B99C2;
+  color: #F9E8D9;
+  transition: 0.15s ease-in-out;
+  cursor: pointer;
+}
+nav #myBtn {
+  position: fixed;
+  display: none;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #5B99C2;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+nav #myBtn:hover {
+  background-color: #1A4870;
+}
+
+footer {
+  height: 500px;
+  background-color: #494949;
+  padding: 50px 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+footer ::-moz-placeholder {
+  color: #555;
+}
+footer ::placeholder {
+  color: #555;
+}
+footer h1 {
+  color: #5B99C2;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 50px;
+}
+footer section {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer section ul {
+  list-style: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  gap: 13px;
+}
+footer section ul li {
+  margin: 5px 0;
+  cursor: pointer;
+}
+footer section ul li a {
+  color: white;
+}
+footer section ul li a:hover {
+  color: #5B99C2;
+}
+footer section form {
+  width: 50%;
+  height: 100%;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+footer section form input, footer section form textarea {
+  width: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 10px;
+  resize: none;
+  font-size: large;
+  border: none;
+}
+footer section form input:focus, footer section form textarea:focus {
+  outline: none;
+}
+footer section form textarea {
+  height: 100px;
+}
+footer section form button {
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  color: white;
+  margin-top: 10px;
+  background-color: #5B99C2;
+  align-self: flex-end;
+}
+footer section form button:hover {
+  background-color: #F9E8D9;
+  color: black;
+}
+footer section form button:active {
+  background-color: #897860;
+}/*# sourceMappingURL=main.css.map */

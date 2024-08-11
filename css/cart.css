@@ -1,0 +1,86 @@
+nav {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.first-content {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.first-content h1 {
+  text-align: center;
+  margin: 110px 0 70px;
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #5B99C2;
+  color: white;
+  padding: 20px 0;
+  border-radius: 5px;
+}
+.first-content table {
+  background-color: rgb(199, 198, 198);
+  width: 100%;
+  font-family: "Zain", sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.first-content table tr {
+  background-color: #5B99C2;
+  color: white;
+  font-size: 25px;
+  border-radius: 5px;
+}
+.first-content table tr th {
+  border-radius: 5px;
+  padding: 10px;
+}
+.first-content table .info {
+  background-color: rgb(199, 198, 198);
+  color: black;
+  font-size: medium;
+}
+.first-content table .info th {
+  font-weight: lighter;
+}
+.first-content table .info th button {
+  border: none;
+  padding: 10px 15px;
+  color: red;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgb(227, 224, 224);
+}
+.first-content table .info th button:hover {
+  background-color: grey;
+  color: rgb(155, 1, 1);
+}
+.first-content table .info th button:active {
+  background-color: rgb(169, 168, 168);
+}
+.first-content table,
+.first-content tr,
+.first-content th {
+  border: 1px solid black;
+}
+.first-content #clear-all {
+  border: none;
+  margin: 10px 0;
+  padding: 10px 50px;
+  font-size: 15px;
+  text-transform: uppercase;
+  background-color: rgb(239, 5, 5);
+  color: white;
+  font-weight: bold;
+  float: right;
+}
+.first-content #clear-all:hover {
+  background-color: rgb(169, 2, 2);
+}
+.first-content #clear-all:active {
+  background-color: rgb(209, 2, 2);
+}/*# sourceMappingURL=cart.css.map */
