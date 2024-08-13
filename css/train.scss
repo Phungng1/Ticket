@@ -1,0 +1,25 @@
+
+
+nav{
+    background-color: rgb(0,0,0,0.9);
+}
+
+.first-content{
+    background-color: antiquewhite;
+    form{
+        background-color: white;
+        width: 50%;
+        margin: auto;
+        padding: 30px;
+        h1{
+            font-size: 50px;
+            text-align: center;
+        }
+        input{
+            display: block;
+        }
+        canvas{
+            padding: auto;
+        }
+    }
+}

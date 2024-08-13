@@ -15,6 +15,13 @@ $background-color_7: #939292;
 $pagelayout-width: 80%;
 
 /*# sourceMappingURL=home.css.map */
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
 
 body{
 	margin-top: 0;
@@ -124,7 +131,7 @@ body{
 				font-size: 17px;
 				font-weight: bold;
 				background-color: $background-color_4;
-				color: black;
+				color: $color_1;
 				border-radius: 7px;
 
 				&:hover {

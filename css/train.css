@@ -1,1 +1,23 @@
-/*# sourceMappingURL=train.css.map */
+nav {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.first-content {
+  background-color: antiquewhite;
+}
+.first-content form {
+  background-color: white;
+  width: 50%;
+  margin: auto;
+  padding: 30px;
+}
+.first-content form h1 {
+  font-size: 50px;
+  text-align: center;
+}
+.first-content form input {
+  display: block;
+}
+.first-content form canvas {
+  padding: auto;
+}/*# sourceMappingURL=train.css.map */
