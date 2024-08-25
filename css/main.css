@@ -99,6 +99,38 @@ nav #myBtn {
 nav #myBtn:hover {
   background-color: #1A4870;
 }
+nav #login-register {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  gap: 15px;
+}
+nav #login-register:hover {
+  background-color: transparent;
+}
+nav #login-register #login {
+  padding: var(--nav-padding);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+nav #login-register #login:hover {
+  background-color: #5B99C2;
+  color: #F9E8D9;
+  transition: 0.15s ease-in-out;
+  cursor: pointer;
+}
+nav #login-register #register {
+  padding: var(--nav-padding);
+  height: 100%;
+  width: 100%;
+}
+nav #login-register #register:hover {
+  background-color: #5B99C2;
+  color: #F9E8D9;
+  transition: 0.15s ease-in-out;
+  cursor: pointer;
+}
 
 footer {
   height: 500px;

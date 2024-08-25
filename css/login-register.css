@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#outline {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  background-color: #F9DBBA;
+}
+
+form {
+  background-color: white;
+  width: 30%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  color: BLACK;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  border-radius: 12px;
+  min-width: 490px;
+}
+form h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+}
+form input {
+  padding: 10px 7px;
+  border: solid 1px grey;
+  border-radius: 5px;
+  background-color: white;
+  color: white;
+  font-weight: bolder;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+}
+form input:focus {
+  background-color: white;
+  outline: none;
+  border: 1px solid #1A4870;
+}
+form button {
+  width: 35%;
+  padding: 10px;
+  margin: auto;
+  background-color: #5B99C2;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+}
+form button:hover {
+  background-color: #1F316F;
+  transition: 0.3s ease-in-out;
+}
+form button:active {
+  background-color: #1A4870;
+  transition: 0s;
+}
+form a {
+  color: white;
+  color: rgb(0, 208, 255);
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: none;
+}
+form a:hover {
+  color: rgb(0, 133, 162);
+  transition: 0.3s ease-in-out;
+}
+
+.error {
+  color: red;
+}/*# sourceMappingURL=login-register.css.map */

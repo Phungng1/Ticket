@@ -7,6 +7,7 @@ navBar.innerHTML += `
         <div id="cart">Cart</div>
         <div id="schedule">Schedule</div>
         <div id="about">About</div>
+        <div id="login-register"></div>
     </div>
     <button id="myBtn" onclick="topFunction()">Top</button>
 
@@ -16,6 +17,9 @@ let homeButton = document.getElementById("home")
 let cartButton = document.getElementById("cart")
 let scheduleButton = document.getElementById("schedule")
 let aboutButton = document.getElementById("about")
+let divLoginRegister = document.getElementById("login-register")
+
+
 
 homeButton.addEventListener("click", () => {
     location.replace("../html/home.html")
@@ -36,6 +40,33 @@ logo.addEventListener("click", () => {
     location.replace("../html/home.html")
 })
 
+import { auth } from "../js/firebase.js"
+import {
+    onAuthStateChanged,
+} from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js"
+
+
+onAuthStateChanged(auth, (user) => {
+    if (!user) {
+        divLoginRegister.innerHTML += `
+                <div id="login">Login</div>
+                <div id="register">Register</div>   
+            `
+        let loginBtn = document.getElementById("login")
+        let registerBtn = document.getElementById("register")
+        loginBtn.addEventListener("click", () => {
+            location.replace("../html/login.html")
+        })
+        registerBtn.addEventListener("click", () => {
+            location.replace("../html/register.html")
+        })
+    } else {
+        divLoginRegister.innerHTML += `
+                <a href="../html/user.html" id="register">User</a>
+            `
+    }
+
+})
 
 // Get the button
 let mybutton = document.getElementById("myBtn");
@@ -57,7 +88,7 @@ mybutton.addEventListener("click", () => {
 })
 
 let footer = document.getElementById("footer")
-footer.innerHTML +=`
+footer.innerHTML += `
         <h1>Send us a feedback</h1>
         <section>
             <ul>

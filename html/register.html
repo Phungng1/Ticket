@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train found</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../css/login-register.css">
+</head>
+
+<body>
+
+    <div id="outline">
+        <form id="register-form">
+            <h1>Register</h1>
+            <input type="text" name="username" id="username" placeholder="Enter username">
+            <div id="username-error" class="error"></div>
+            <input type="text" name="email" id="email" placeholder="Enter email">
+            <div id="email-error" class="error"></div>
+            <input type="password" name="password" id="password" placeholder="Enter password">
+            <div id="password-error" class="error"></div>
+            <input type="password" name="confirmPassword" id="confirm-password" placeholder="Confirm password">
+            <div id="confirm-password-error" class="error"></div>
+            <button type="submit">Sign up</button>
+            <p>Already have an account? <a href="../html/login.html">Login</a> or <a href="../html/home.html">Back
+                    to home</a></p>
+        </form>
+    </div>
+
+    <script type="module" src="../js/firebase.js"></script>
+    <!-- <script type="module" src="../js/main.js"></script> -->
+    <script type="module" src="../js/register.js"></script>
+</body>
+
+</html>
