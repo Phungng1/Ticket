@@ -93,18 +93,19 @@ body {
 .inner-first-content .form form .list {
   display: none;
 }
-.inner-first-content .form form button {
+.inner-first-content .form form #find-train {
   border: none;
   width: 100%;
   padding: 10px 0;
   margin-top: 15px;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: bold;
   background-color: rgb(0, 115, 255);
   color: white;
   border-radius: 7px;
+  text-align: center;
 }
-.inner-first-content .form form button:hover {
+.inner-first-content .form form #find-train:hover {
   background-color: rgb(1, 83, 184);
 }
 .inner-first-content .text {

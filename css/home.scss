@@ -123,17 +123,17 @@ body{
 				display: none;
 			}
 
-			button {
+			#find-train {
 				border: none;
 				width: 100%;
 				padding: 10px 0;
 				margin-top: 15px;
-				font-size: 17px;
+				font-size: 20px;
 				font-weight: bold;
 				background-color: $background-color_4;
 				color: $color_1;
 				border-radius: 7px;
-
+				text-align: center;
 				&:hover {
 					background-color: $background-color_5;
 				}

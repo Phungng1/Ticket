@@ -1,6 +1,6 @@
 let findTrainBtn = document.getElementById("find-train")
 findTrainBtn.addEventListener("click", ()=>{
-    window.open("../html/find_train.html")
+    location.href = "../html/find_train.html"
 })
 
 let navBar = document.getElementById("nav")

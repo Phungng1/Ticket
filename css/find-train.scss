@@ -14,13 +14,15 @@ body{
 .first-content{
     width: $pagelayout-width;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 0;
     h1{
         margin: 50px 0;
         text-align: center;
         font-size: 50px;
         font-family: $fontfamily_1;
-        color: $color_1;
+        color: $background-color_1;
+        background-color: $color_1;
+        padding: 40px 0;
     }
     ul{
         list-style: none;
@@ -31,6 +33,7 @@ body{
         width: $pagelayout-width;
         margin: auto;
         padding: auto;
+        gap: 30px;
         li{
             display: flex;
             margin: auto;
