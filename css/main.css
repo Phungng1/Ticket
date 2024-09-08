@@ -81,6 +81,9 @@ nav .tabs > div:hover {
   transition: 0.15s ease-in-out;
   cursor: pointer;
 }
+nav .tabs a {
+  color: #fbeeda;
+}
 nav #myBtn {
   position: fixed;
   display: none;
