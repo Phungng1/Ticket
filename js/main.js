@@ -19,8 +19,6 @@ let scheduleButton = document.getElementById("schedule")
 let aboutButton = document.getElementById("about")
 let divLoginRegister = document.getElementById("login-register")
 
-
-
 homeButton.addEventListener("click", () => {
     location.replace("../html/home.html")
 })
@@ -63,6 +61,7 @@ onAuthStateChanged(auth, (user) => {
     } else {
         divLoginRegister.innerHTML += `
                 <a href="../html/user.html" id="register">User</a>
+                <a href ="../html/find_train.html" id="panel">Panel</a>
             `
     }
 

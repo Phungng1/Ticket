@@ -119,22 +119,11 @@ nav {
 		&:hover{
 			background-color: transparent;
 		}
-		#login{
+		#login, #register, #user, #panel{
 			padding: var(--nav-padding);
 			height: 100%;
 			width: 100%;
 			text-align: center;
-			&:hover{
-				background-color: $background-color_2;
-				color: $color_3;
-				transition: 0.15s ease-in-out;
-				cursor: pointer;
-			}
-		}
-		#register{
-			padding: var(--nav-padding);
-			height: 100%;
-			width: 100%;
 			&:hover{
 				background-color: $background-color_2;
 				color: $color_3;

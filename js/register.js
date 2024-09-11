@@ -7,15 +7,19 @@ import { app, auth } from "./firebase.js"
 import {
     createUserWithEmailAndPassword,
     sendEmailVerification,
-
 } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js";
+
+import {
+    collection, addDoc,
+} from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js"
+import { db } from "./firebase.js"
 
 const controller = {}
 const registerForm = document.querySelector("#register-form")
 const lowerCaseLetter = /[a-z]/g
 const upperCaseLetter = /[A-Z]/g
 const number = /[0-9]/g
-
+const userList = collection(db, "user_list")
 registerForm.addEventListener("submit", (event) => {
     event.preventDefault()
     controller.register = (dataSignUp) => {
@@ -81,7 +85,7 @@ registerForm.addEventListener("submit", (event) => {
     createUserWithEmailAndPassword(
         auth,
         dataSignUpInfo.email,
-        dataSignUpInfo.password
+        dataSignUpInfo.password,
     ).then((userCredential) => {
         alert("Verification email sent")
         const user = userCredential.user

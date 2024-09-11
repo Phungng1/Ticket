@@ -11,7 +11,7 @@ const p = document.getElementsByTagName("p")
 onAuthStateChanged(auth, (user)=>{
     if (user){
         const email = user.email
-        console.log(email);
+        console.log(user.uid);
         p[1].innerHTML +=`
         Email: ${email}
         `
@@ -32,3 +32,5 @@ logOutBtn.addEventListener("click", ()=>{
             
         })
 })
+
+console.log();

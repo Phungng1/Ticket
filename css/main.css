@@ -111,24 +111,13 @@ nav #login-register {
 nav #login-register:hover {
   background-color: transparent;
 }
-nav #login-register #login {
+nav #login-register #login, nav #login-register #register, nav #login-register #user, nav #login-register #panel {
   padding: var(--nav-padding);
   height: 100%;
   width: 100%;
   text-align: center;
 }
-nav #login-register #login:hover {
-  background-color: #5B99C2;
-  color: #F9E8D9;
-  transition: 0.15s ease-in-out;
-  cursor: pointer;
-}
-nav #login-register #register {
-  padding: var(--nav-padding);
-  height: 100%;
-  width: 100%;
-}
-nav #login-register #register:hover {
+nav #login-register #login:hover, nav #login-register #register:hover, nav #login-register #user:hover, nav #login-register #panel:hover {
   background-color: #5B99C2;
   color: #F9E8D9;
   transition: 0.15s ease-in-out;

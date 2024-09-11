@@ -21,15 +21,15 @@
     <section class="first-content">
         <div class="inner-first-content">
             <div class="form">
-                <form action="">
+                <form id="find-train-form" action="submit">
                     <h2>Location</h2>
                     <div class="text-box lower-border">
                         <label for="start">Start</label>
-                        <input type="text" id="start" placeholder="City or station" onfocus="reveal()">
+                        <input type="text" name="start" placeholder="City or station">
                     </div>
                     <div class="text-box">
-                        <label for="destination">Destination</label>
-                        <input type="text" id="destination" placeholder="City or station" onclick="reveal()">
+                        <label for="destination">End</label>
+                        <input type="text" name="end" placeholder="City or station">
 
                     </div>
                     <h2>Time</h2>
@@ -43,7 +43,7 @@
                         <input type="text" id="to" placeholder="Select time">
 
                     </div>
-                    <div id="find-train">Find train</div>
+                    <button id="find-train">Find train</button>
                 </form>
             </div>
             <div class="text">
