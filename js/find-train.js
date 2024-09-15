@@ -20,8 +20,7 @@ getDocs(docRef1)
 
     })
 
-
-
+    
 
 //////////////////////////////////////////////////////////////
 const docRef2 = collection(db, "user_input")
@@ -42,12 +41,9 @@ const user_input = JSON.parse(localStorage.getItem("user input"))
 
 
 
-
 ////////////////////////////////////////////////////////////////
 let trainList = document.getElementById("train")
 let i
-
-
 
 
 
@@ -127,6 +123,9 @@ onAuthStateChanged(auth, (user) => {
             if (user_input_start == train_info_list_start){
                 let li = document.createElement("li")
                 li.setAttribute("data-id", train_list_info[i].id);
+                li.addEventListener("click",()=>{
+                    location.href = "../html/train.html"
+                })
                 li.innerHTML += `
                 <div class="image">
                 <img src="../img/transport-in-vietnam.jpg" alt="">

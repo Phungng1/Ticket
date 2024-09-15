@@ -5,7 +5,6 @@ navBar.innerHTML += `
     <div class="tabs" id="tabs">
         <div id="home">Home</div>
         <div id="cart">Cart</div>
-        <div id="schedule">Schedule</div>
         <div id="about">About</div>
         <div id="login-register"></div>
     </div>
@@ -15,7 +14,6 @@ navBar.innerHTML += `
 
 let homeButton = document.getElementById("home")
 let cartButton = document.getElementById("cart")
-let scheduleButton = document.getElementById("schedule")
 let aboutButton = document.getElementById("about")
 let divLoginRegister = document.getElementById("login-register")
 
@@ -25,9 +23,7 @@ homeButton.addEventListener("click", () => {
 cartButton.addEventListener("click", () => {
     location.replace("../html/cart.html")
 })
-scheduleButton.addEventListener("click", () => {
-    location.replace("../html/schedule.html")
-})
+
 aboutButton.addEventListener("click", () => {
     location.replace("../html/about.html")
 })

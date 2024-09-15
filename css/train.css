@@ -7,17 +7,58 @@ nav {
 }
 .first-content form {
   background-color: white;
-  width: 50%;
+  width: 30%;
   margin: auto;
-  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  color: BLACK;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  border-radius: 12px;
+  min-width: 490px;
 }
 .first-content form h1 {
   font-size: 50px;
+  margin-bottom: 20px;
   text-align: center;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  color: black;
 }
 .first-content form input {
-  display: block;
+  padding: 10px 7px;
+  border: solid 1px grey;
+  border-radius: 5px;
+  background-color: white;
+  color: white;
+  font-weight: bolder;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  color: black;
 }
-.first-content form canvas {
-  padding: auto;
+.first-content form input:focus {
+  background-color: white;
+  outline: none;
+  border: 1px solid #1A4870;
+}
+.first-content form button {
+  width: 35%;
+  padding: 10px;
+  margin: auto;
+  background-color: #5B99C2;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+}
+.first-content form button:hover {
+  background-color: #1F316F;
+  transition: 0.3s ease-in-out;
+}
+.first-content form button:active {
+  background-color: #1A4870;
+  transition: 0s;
 }/*# sourceMappingURL=train.css.map */

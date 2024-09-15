@@ -32,10 +32,8 @@ body {
   background-color: #5B99C2;
   color: white;
   font-size: 25px;
-  border-radius: 5px;
 }
 .first-content table tr th {
-  border-radius: 5px;
   padding: 10px;
 }
 .first-content table .info {

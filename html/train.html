@@ -15,31 +15,23 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/train.css">
 </head>
-<head>
-    <script src="../js/train.js"></script>
-</head>
-<body onload="renderSeatplan(getSeatInfo(10,16))">
+<body>
     <nav id="nav"></nav>
     <section class="first-content">
-        <form action="">
-            <h1>Reservation information</h1>
-            <label for="name">Name</label><br>
-            <input type="text" id="name" placeholder="Your name here"><br>
-            <label for="email">Email</label><br>
-            <input type="text" id="email" placeholder="Your email address here"><br>
-            <label for="phone-num">Phone Number</label><br>
-            <input type="number" id="phone-num" placeholder="Your phone number here"><br>
-            <label for="date">Date</label>
-            <input type="date" id="date">
-            <h1>Seatplan</h1>
-            <canvas id="seatplan" width="640" height="480" ></canvas>
-            <input type="submit">
+        <form id="reserve-form" action="">
+            <h1>Reservation form</h1>
+            <input type="text" name="name" placeholder="Your name here" required><br>
+            <input type="text" name="email" placeholder="Your email address here" required><br>
+            <input type="tel" name="phone_num" pattern="[0-9]{10}" placeholder="Your phone number here" required><br>
+            <input type="number" name="num_of_seat" placeholder="How many seats" required>
+            <button type="submit">Book</button>
         </form>
     </section>
 
     <footer id="footer"></footer>
     <script type="module" src="../js/firebase.js"></script>
     <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/train.js"></script>
 </body>
 
 </html>
