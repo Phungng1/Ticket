@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>Add admin</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,33 +13,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <!-- Style CSS -->
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/add-train.css">
 </head>
+
 <body>
     <nav id="nav"></nav>
+
     <section class="first-content">
-        <h1>Your cart</h1>
-        <table id="first-content">
-            <tr>
-                <th>Train Name</th>
-                <th>Destination</th>
-                <th>Boarding Time</th>
-                <th>Total Price</th>
-                <th></th>
-            </tr>
-            <tr class="info"> 
-                <th>Name here</th>
-                <th>Destination here</th>
-                <th>Boarding Time here</th>
-                <th>Total price here</th>
-                <th><button>cancel</button></th>
-            </tr>
-        </table>
-        <button id="clear-all">clear all</button>
+        <form id="add-admin-form" action="submit">
+            <input type="text" name="email" placeholder="New admin email">
+            <button type="submit" id="add-train">Submit info</button>
+        </form>
+
     </section>
+
     <footer id="footer"></footer>
     <script type="module" src="../js/firebase.js"></script>
     <script type="module" src="../js/main.js"></script>
-    <script type="module" src="../js/cart.js"></script>
+    <script type="module" src="../js/add-admin.js"></script>
 </body>
+
 </html>

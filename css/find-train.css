@@ -25,10 +25,10 @@ body {
   background-color: #5B99C2;
   padding: 40px 0;
 }
-.first-content #divAdmin-add input, .first-content #divAdmin-add button, .first-content #divAdmin-delete input, .first-content #divAdmin-delete button {
+.first-content #divAdmin-add input, .first-content #divAdmin-add button, .first-content #divAdmin-delete input, .first-content #divAdmin-delete button, .first-content #divAdmin-add-admin input, .first-content #divAdmin-add-admin button {
   padding: 10px;
 }
-.first-content #divAdmin-add a, .first-content #divAdmin-delete a {
+.first-content #divAdmin-add a, .first-content #divAdmin-delete a, .first-content #divAdmin-add-admin a {
   border: none;
   padding: 10px 40px;
   font-size: 18px;
@@ -39,10 +39,10 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-decoration: none;
 }
-.first-content #divAdmin-add a:hover, .first-content #divAdmin-delete a:hover {
+.first-content #divAdmin-add a:hover, .first-content #divAdmin-delete a:hover, .first-content #divAdmin-add-admin a:hover {
   background-color: #ff96ad;
 }
-.first-content #divAdmin-add a:active, .first-content #divAdmin-delete a:active {
+.first-content #divAdmin-add a:active, .first-content #divAdmin-delete a:active, .first-content #divAdmin-add-admin a:active {
   background-color: #96918c;
 }
 .first-content ul {
