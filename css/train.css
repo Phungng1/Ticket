@@ -2,11 +2,79 @@ nav {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
+.container {
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+}
+.container .seat-map {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+.container .seat-map .seat {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border: 1px solid #999;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .seat-map .seat.selected {
+  background-color: #6c6;
+}
+.container .seat-map .seat.occupied {
+  background-color: #f66;
+  cursor: not-allowed;
+}
+
+.summary {
+  margin-top: 20px;
+}
+.summary button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.summary button:hover {
+  background-color: #0056b3;
+}
+
+.email-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.email-section input {
+  display: block;
+  width: 50%;
+  padding: 10px 7px;
+  margin: 10px;
+  border: solid 1px grey;
+  border-radius: 5px;
+  background-color: #ccc;
+  color: white;
+  font-weight: bolder;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
 .first-content {
   background-color: antiquewhite;
 }
 .first-content form {
-  background-color: white;
+  background-color: #ccc;
   width: 30%;
   margin: auto;
   display: flex;
@@ -30,7 +98,7 @@ nav {
   padding: 10px 7px;
   border: solid 1px grey;
   border-radius: 5px;
-  background-color: white;
+  background-color: #ccc;
   color: white;
   font-weight: bolder;
   font-family: Calibri, "Trebuchet MS", sans-serif;
@@ -38,15 +106,15 @@ nav {
   color: black;
 }
 .first-content form input:focus {
-  background-color: white;
+  background-color: #ccc;
   outline: none;
-  border: 1px solid #1A4870;
+  border: 1px solid #f66;
 }
 .first-content form button {
   width: 35%;
   padding: 10px;
   margin: auto;
-  background-color: #5B99C2;
+  background-color: #0056b3;
   border: none;
   border-radius: 5px;
   font-weight: bold;
@@ -55,10 +123,10 @@ nav {
   color: white;
 }
 .first-content form button:hover {
-  background-color: #1F316F;
+  background-color: #6c6;
   transition: 0.3s ease-in-out;
 }
 .first-content form button:active {
-  background-color: #1A4870;
+  background-color: #f66;
   transition: 0s;
 }/*# sourceMappingURL=train.css.map */

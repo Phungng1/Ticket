@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservation site</title>
+    <title>Train found</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,31 +13,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <!-- Style CSS -->
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/train.css">
+    <link rel="stylesheet" href="../css/find-train.css">
 </head>
+
 <body>
+
     <nav id="nav"></nav>
-    <div class="container">
-        <h1>Choose Your Seat</h1>
-        <div class="seat-map">
-            <!-- Generate rows of seats dynamically using JavaScript -->
+
+    <section class="first-content">
+        <div id="divAdmin-delete">
+            <input id="deleteInputId" type="text" placeholder="Element ID">
+            <button id="deleteBtn">Delete</button>
         </div>
-        <div class="summary">
-            <h3>Selected Seats:</h3>
-            <p id="selected-seats">None</p>
-            <div class="email-section">
-                <h3>Enter Your Email:</h3>
-                <input type="email" id="email" placeholder="Your email address" required>
-            </div>
-            <button id="book-now">Book Now</button>
+        <ul id="train">
+        </ul>
+        <div id="divAdmin-add">
+            <a href="../html/add-train.html">+ Add train</a>
+            <a href="../html/add_admin.html">+ Add Admin</a>
         </div>
-    </div>
+    </section>
 
     <footer id="footer"></footer>
     <script type="module" src="../js/firebase.js"></script>
     <script type="module" src="../js/main.js"></script>
-    <script type="module" src="../js/train.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="module" src="../js/panel.js"></script>
 </body>
 
 </html>

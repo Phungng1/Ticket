@@ -57,7 +57,7 @@ onAuthStateChanged(auth, (user) => {
     } else {
         divLoginRegister.innerHTML += `
                 <a href="../html/user.html" id="register">User</a>
-                <a href ="../html/find_train.html" id="panel">Panel</a>
+                <a href ="../html/panel.html" id="panel">Panel</a>
             `
     }
 
@@ -94,9 +94,9 @@ footer.innerHTML += `
                 <li><a href="#">Station</a></li>
             </ul>
             <form action="submit">
-                <label for="name">Name</label> <br>
+                
                 <input type="text" id="name" placeholder="Your name here"><br>
-                <label for="">Feedback</label><br>
+                
                 <textarea type="text" id="feedback" placeholder="Tell us what you think"></textarea>
                 <button type="button">Send</button>
             </form>
