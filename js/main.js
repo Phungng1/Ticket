@@ -93,7 +93,7 @@ footer.innerHTML += `
                 <li><a href="#">Company</a></li>
                 <li><a href="#">Station</a></li>
             </ul>
-            <form action="submit">
+            <form id="review-form" action="submit">
                 
                 <input type="text" id="name" placeholder="Your name here"><br>
                 

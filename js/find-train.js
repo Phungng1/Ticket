@@ -68,6 +68,7 @@ onAuthStateChanged(auth, (user) => {
             if (user_input_start == train_info_list_start && user_input_end == train_info_list_end) {
                 let li = document.createElement("li")
                 li.setAttribute("data-id", train_list_info[i].id);
+                li.setAttribute("trainName", train_list_info[i].Name)
                 li.addEventListener("click", () => {
                     location.href = "../html/train.html"
                 })
@@ -138,6 +139,7 @@ onAuthStateChanged(auth, (user) => {
             if (user_input_start == train_info_list_start && user_input_end == train_info_list_end) {
                 let li = document.createElement("li")
                 li.setAttribute("data-id", train_list_info[i].id);
+                li.setAttribute("trainName", train_list_info[i].Name)
                 li.addEventListener("click", () => {
                     location.href = "../html/train.html"
                 })
@@ -162,7 +164,6 @@ onAuthStateChanged(auth, (user) => {
         divAdminAdd.style.display = "none"
     }
 })
-
 
 
 

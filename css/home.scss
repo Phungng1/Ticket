@@ -13,6 +13,12 @@ $background-color_5: rgb(1, 83, 184);
 $background-color_6: rgb(216, 216, 216);
 $background-color_7: #939292;
 $pagelayout-width: 80%;
+$font-family: Arial, sans-serif;
+$bg-color: #f4f4f9;
+$text-color: #333333;
+$secondary-text-color: #555555;
+$light-gray: #e0e0e0;
+$accent-color: #f39c12;
 
 /*# sourceMappingURL=home.css.map */
 *{
@@ -21,11 +27,98 @@ $pagelayout-width: 80%;
 	text-decoration: none;
 	box-sizing: border-box;
 }
+// Variables
 
+body {
+  font-family: $font-family_1;
+  margin: 0;
+  padding: 0;
 
-body{
-	margin-top: 0;
 }
+.review-title{
+  text-align: center;
+  color: $text-color;
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+.reviews-section {
+  max-width: 80%;
+
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  .review-container{
+	display: flex;
+	flex-direction: row;
+  }
+  .review-card {
+    display: flex;
+	flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    border-bottom: 1px solid $light-gray;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .profile-pic {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    .review-content {
+      flex: 1;
+
+      h3 {
+        margin: 0;
+        color: $secondary-text-color;
+        font-size: 18px;
+      }
+
+      .review-text {
+        margin: 10px 0;
+        color: lighten($secondary-text-color, 10%);
+        line-height: 1.5;
+      }
+
+      .rating {
+        font-weight: bold;
+        color: $accent-color;
+      }
+
+      .review-date, .travel-date {
+        font-size: 12px;
+        color: darken($light-gray, 20%);
+        margin-top: 5px;
+      }
+
+      .interaction {
+        margin-top: 10px;
+
+        span {
+          margin-right: 15px;
+          font-size: 14px;
+          color: $secondary-text-color;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
 
 .first-content {
 	background-image: url(../img/transport-in-vietnam.jpg);
@@ -255,6 +348,7 @@ body{
 	max-width: $pagelayout-width;
 	margin: auto;
 	display: grid;
+	font-family: $font-family_1;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 30px;
 	.content{
@@ -274,8 +368,8 @@ body{
 			display: flex;
 			justify-content: space-between;
 			font-weight: bold;
-			font-size: 20px;
-			font-family: $font-family_2;
+			font-size: 15px;
+			font-family: $font-family_1;
 		}
 	}
 }
@@ -307,7 +401,7 @@ body{
 	}
 }
 
-@media only screen and (width < 900px) {
+@media only screen and (width < 1000px) {
 	body {
 		width: 100%;
 	}
@@ -318,8 +412,7 @@ body{
 		gap: 50px;
 
 		.form {
-			width: 100%;
-			border-radius: 0;
+			border-radius: 12px;
 		}
 
 		.text {

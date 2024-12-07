@@ -39,17 +39,8 @@ findTrainForm.addEventListener("submit", (e)=>{
     }
 })
 
-let reviews =  JSON.parse(localStorage.getItem("reviews"))
-let divReviews = document.getElementById("review")
-let key
-for (key of reviews){
-    divReviews.innerHTML += `
-     <div class="review-content">
-                <h3>${key.name}</h3>
-                <p>${key.context}</p>
-            </div>
-    `
-}
+
+
 
 
 
